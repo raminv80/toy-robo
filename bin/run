@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "toy/robo"
+
+puts 'running...'
+simulator = ::Toy::Robo::Simulator.new
+
+command = STDIN.gets
+while command
+  output = simulator.execute(command)
+  puts output if output
+  command = STDIN.gets
+end
+
+
+puts 'finished'
