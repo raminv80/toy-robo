@@ -9,11 +9,10 @@ This application moves a robot on a table while keeping it safe! This gem is dev
 
 To run the app as a standalone application, clone the code to your local, browse to the folder and run 'bin/run' form shell (you need execusion priviledge to run the file or chmod 755).
 
-To feed a file as input (for example ./examples/sample1.txt) run following line from the shell:
+```Batchfile
+$ ./bin/run
+```
 
-$ cat ./examples/sample1.txt | ./bin/run
-
-To experiment with the code, you may run `bin/console` for an interactive prompt.
 
 ##Available commands
 
@@ -32,6 +31,17 @@ The robot accepts following commands
   reports current position of robot
 
 Te robot accepts commands from STDIN, executing valid commands one at a time until EOF is reached.  (On a Linux or OSX system, type C-d to generate an EOF character).
+
+## Feeding a command file
+
+To feed a file as input (for example ./examples/sample1.txt) run following line from the shell:
+
+```Batchfile
+$ cat ./examples/sample1.txt | ./bin/run
+```
+
+To experiment with the code, you may run `bin/console` for an interactive prompt.
+
 
 ## Installation as Gem
 
